@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Casino</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+body {
+  background:#0e0e0e;
+  color:white;
+  font-family:sans-serif;
+  text-align:center;
+}
+button {
+  padding:15px;
+  margin:10px;
+  font-size:18px;
+  border-radius:10px;
+  border:none;
+}
+</style>
+</head>
+<body>
+
+<h1>🎰 Casino</h1>
+
+<button onclick="play()">Spin Slots</button>
+<button onclick="Telegram.WebApp.close()">Close</button>
+
+<script>
+Telegram.WebApp.ready();
+
+function play() {
+  alert("Slots are played in bot via inline mode");
+}
+</script>
+
+</body>
+</html>
